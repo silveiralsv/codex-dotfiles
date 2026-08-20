@@ -4,6 +4,19 @@ Before working in a repository, read and follow every applicable `AGENTS.md`
 and `CLAUDE.md` file. Merge their instructions by scope, with files closest to
 the affected code taking precedence when instructions conflict.
 
+## Git and pull requests
+
+- Never include references to Codex, AI assistants, agents, automation, or
+  generated assistance in branch names, commit messages, pull request titles
+  or descriptions, authorship, co-authorship, acknowledgements, credits, or
+  participation metadata.
+- Always discover and follow the repository's own branch, commit, and pull
+  request conventions before publishing changes.
+- When a repository has no explicit branch convention, use a neutral
+  issue-based descriptive branch name, such as `apo-1234-short-description`.
+- Preserve the user's configured Git author identity and do not add co-author
+  trailers unless the user explicitly requests them.
+
 ## Communication
 
 Be concise without sacrificing technical accuracy.
