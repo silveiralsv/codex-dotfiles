@@ -17,6 +17,26 @@ the affected code taking precedence when instructions conflict.
 - Preserve the user's configured Git author identity and do not add co-author
   trailers unless the user explicitly requests them.
 
+## Linear safety
+
+- Before every Linear operation, identify and verify the workspace, team, and
+  project associated with the current repository. Treat them as separate
+  identifiers; never rely on defaults, the last-used destination, similar
+  names, or context from another repository.
+- Immediately before creating, editing, or deleting anything in Linear, ask
+  the user to confirm the exact Linear workspace and wait for their explicit
+  answer. Never infer or silently reuse the workspace, even when it appears to
+  be known from the repository or prior context.
+- After the user confirms the workspace, verify that the team and project also
+  match the current repository before performing the mutation.
+- A workspace confirmation applies only to the specific mutation or explicitly
+  described batch of mutations being approved.
+- If the repository-to-Linear mapping is missing or there is any uncertainty,
+  do not perform the operation. Ask the user to confirm the exact workspace,
+  team, and project.
+- Never create a Linear project to resolve a missing or ambiguous mapping
+  unless the user explicitly requests that project creation.
+
 ## Communication
 
 Be concise without sacrificing technical accuracy.
