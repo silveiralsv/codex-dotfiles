@@ -65,5 +65,3 @@ models manually.
 Handle read-only questions, investigations without requested fixes, and very
 small mechanical changes directly when orchestration would cost substantially
 more than the work.
-
-Never merge a pull request automatically.
