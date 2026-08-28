@@ -45,7 +45,7 @@ The installation prompt detects these dependencies and installs only what is mis
 
 ## Installation model
 
-The installer creates links only for files owned by this repository:
+The installer copies only the files owned by this repository:
 
 ```text
 ~/.codex/AGENTS.md
@@ -54,6 +54,8 @@ The installer creates links only for files owned by this repository:
 ~/.agents/skills/orchestrated-development
 ```
 
-It does not link or replace the whole `~/.codex` directory, so authentication, history, logs, local configuration, other agents, and other skills remain local.
+It creates regular files and directories, not symbolic links, and does not replace the whole `~/.codex` directory. Authentication, history, logs, local configuration, other agents, and other skills remain local.
+
+The installed copies do not update automatically. After changing this repository, run the installation prompt again to refresh them.
 
 See the official OpenAI documentation for [AGENTS.md](https://learn.chatgpt.com/docs/agent-configuration/agents-md), [skills](https://learn.chatgpt.com/docs/build-skills), and [subagents](https://learn.chatgpt.com/docs/agent-configuration/subagents).
