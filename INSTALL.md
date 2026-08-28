@@ -60,6 +60,9 @@ a regular file or directory:
 
 <checkout>/skills/orchestrated-development
   -> <HOME>/.agents/skills/orchestrated-development
+
+<checkout>/skills/monthly-summary
+  -> <HOME>/.agents/skills/monthly-summary
 ```
 
 Never create symbolic links, hard links, or junctions for these destinations.
@@ -113,7 +116,8 @@ After installation:
 1. Verify every destination is a physical copy, not a link or junction, and its
    content matches the source.
 2. Parse both custom-agent TOML files or otherwise confirm they are readable.
-3. Confirm the `orchestrated-development` skill contains a readable `SKILL.md`.
+3. Confirm the `orchestrated-development` and `monthly-summary` skills each
+   contain a readable `SKILL.md`.
 4. Confirm Ponytail and the Caveman skills are discoverable when installed.
 5. Report created or updated copies, migrated links, unchanged matching copies,
    dependency actions, backups, and blockers.
