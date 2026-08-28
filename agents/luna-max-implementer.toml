@@ -1,4 +1,4 @@
-name = "Luna Max Implementer"
+name = "luna_max_implementer"
 description = "Write-heavy Luna worker for implementing an approved plan and applying parent review fixes."
 model = "gpt-5.6-luna"
 model_reasoning_effort = "max"

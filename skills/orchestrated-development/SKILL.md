@@ -1,6 +1,6 @@
 ---
 name: orchestrated-development
-description: Orchestrate non-trivial repository development through parent-led investigation and planning, implementation by Luna Max Implementer, parent review and acceptance, and pull-request publication by Luna PR Writer. Use for features, substantial fixes, maintenance, refactors, and tests. Do not use for read-only analysis, diagnosis without requested fixes, or tiny mechanical changes.
+description: Orchestrate non-trivial repository development through parent-led investigation and planning, implementation by luna_max_implementer, parent review and acceptance, and pull-request publication by luna_pr_writer. Use for features, substantial fixes, maintenance, refactors, and tests. Do not use for read-only analysis, diagnosis without requested fixes, or tiny mechanical changes.
 ---
 
 # Orchestrated Development
@@ -16,8 +16,8 @@ the actual diff, and final acceptance.
 
 Custom agents are:
 
-- `Luna Max Implementer`: the only write-heavy implementation and fix worker.
-- `Luna PR Writer`: the final branch, commit, push, and pull-request worker.
+- `luna_max_implementer`: the only write-heavy implementation and fix worker.
+- `luna_pr_writer`: the final branch, commit, push, and pull-request worker.
 
 Do not create a reviewer subagent. Architectural review remains with the
 primary agent.
@@ -83,7 +83,7 @@ context to implement without repeating broad investigation.
 
 ### 4. Delegate implementation
 
-Spawn the custom agent named exactly `Luna Max Implementer`. Provide the task
+Spawn the custom agent named exactly `luna_max_implementer`. Provide the task
 or ticket identifier, approved plan, acceptance criteria, relevant
 architectural context, baseline worktree state, excluded scope, and validation
 expectations.
@@ -113,7 +113,7 @@ block the workflow.
 
 ### 6. Correct substantive findings
 
-Send precise corrective instructions to the same `Luna Max Implementer`
+Send precise corrective instructions to the same `luna_max_implementer`
 thread. Include the affected behavior or location, why it is incorrect, the
 expected correction, and validation that must be rerun.
 
@@ -137,7 +137,7 @@ only when the task is genuinely complete.
 ### 8. Publish the pull request
 
 After final acceptance, spawn the custom agent named exactly
-`Luna PR Writer`. Provide the approved file scope, ticket or task identifier,
+`luna_pr_writer`. Provide the approved file scope, ticket or task identifier,
 implementation summary, validation results, architectural decisions worth
 recording, intended base branch, and known limitations or follow-ups.
 
