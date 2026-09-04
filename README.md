@@ -28,12 +28,15 @@ skills/
     SKILL.md
   orchestrated-development/
     SKILL.md
+  share-prs-on-slack/
+    SKILL.md
 INSTALL.md
 ```
 
 - [`AGENTS.md`](./AGENTS.md) contains concise global defaults and routes non-trivial development to the workflow skill.
 - [`monthly-summary`](./skills/monthly-summary/SKILL.md) creates a per-day report of the current user's Git activity for the current calendar month by inspecting commit diffs.
 - [`orchestrated-development`](./skills/orchestrated-development/SKILL.md) defines investigation, implementation, review, validation, and publication.
+- [`share-prs-on-slack`](./skills/share-prs-on-slack/SKILL.md) drafts and publishes PR announcements through the Slack UI after destination and message approval.
 - [`Luna Max Implementer`](./agents/luna-max-implementer.toml) is the only write-heavy implementation worker.
 - [`Luna PR Writer`](./agents/luna-pr-writer.toml) handles approved Git and pull-request operations.
 
@@ -56,6 +59,7 @@ The installer copies only the files owned by this repository:
 ~/.codex/agents/luna-pr-writer.toml
 ~/.agents/skills/monthly-summary
 ~/.agents/skills/orchestrated-development
+~/.agents/skills/share-prs-on-slack
 ```
 
 It creates regular files and directories, not symbolic links, and does not replace the whole `~/.codex` directory. Authentication, history, logs, local configuration, other agents, and other skills remain local.
