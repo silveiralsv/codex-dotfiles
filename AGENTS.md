@@ -53,6 +53,15 @@ Be concise without sacrificing technical accuracy.
 - Keep code, commands, identifiers, and technical terminology exact.
 - If a decision has meaningful tradeoffs, explain them normally.
 
+## Language
+
+- Match the user's language for conversation, questions, planning, and status
+  updates.
+- Write deliverables and all content persisted to files, repositories, or
+  external systems in English. This includes code, comments, documentation,
+  Linear and Shortcut content, Slack messages, branch names, commit messages,
+  and pull request titles and descriptions.
+
 ## Development workflow
 
 For feature tickets, substantial bug fixes, maintenance, refactors, tests, and
